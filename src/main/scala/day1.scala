@@ -13,39 +13,30 @@ object Day1
             .toList
             .filter(c => c == '(' || c == ')')
 
-    def part1(): Unit = 
+    def part1(): Int = 
+      getInput.map(c => c match { 
+        case '(' => 1
+        case ')' => -1
+      }).sum
+
+    def part2(): Int = 
     {
       var level = 0
-
-      for(c <- getInput) {
-        c match {
-          case '(' => level += 1
-          case ')' => level -= 1
-        }
-      }
-      println(s"Answer to day 1 part 1 is $level")
-    }
-
-    def part2(): Unit = 
-    {
-      var level = 0
-      var position = 0
 
       getInput.takeWhile(c => {
-        position += 1
         c match {
           case '(' => level += 1
           case ')' => level -= 1
         }
         level != -1
-      })
-
-      println(s"Answer to day 1 part 1 is $position")
+      }).length+1
     }
 
     def execute(): Unit = {
-      part1
-      part2
+      println();
+      println("--- Day 1 ---")
+      println(s"Answer to day 1 part 1 is $part1")
+      println(s"Answer to day 1 part 2 is $part2")
     }
   }
 }
