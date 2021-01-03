@@ -1,6 +1,6 @@
 import scala.io.Source
 
-object Day1 
+package Days 
 {
   case class Day1()
   {

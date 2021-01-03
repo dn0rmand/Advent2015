@@ -1,6 +1,4 @@
-import Day1.Day1
-import Day2.Day2
-
+import Days._
 
 object Main extends App {
   println("###############################")
@@ -9,6 +7,7 @@ object Main extends App {
   
   Day1().execute
   Day2().execute
+  Day3().execute
 
   println()
   println("Done")
