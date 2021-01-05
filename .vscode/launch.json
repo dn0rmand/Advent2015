@@ -11,7 +11,7 @@
       "mainClass": "Main", 
       "args": [],
       "jvmOptions": [],
-      "env": {}
+      "env": {},
     }
   ]
 }
