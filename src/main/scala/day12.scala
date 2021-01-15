@@ -19,9 +19,9 @@ case class Day12()
         => value
       case value: Double 
         => value.toInt
-      case value: Map[String, Any] 
+      case value: Map[String, Any]
         => value.values.map(v => part1(v)).sum
-      case value: List[Any] 
+      case value: List[Any]
         => value.map(v => part1(v)).sum
       case _ 
         => 0
