@@ -22,7 +22,7 @@ object Main extends App {
   Day15().execute
   Day16().execute
   Day17().execute
-  // Day18().execute
+  Day18().execute
   // Day19().execute
   // Day20().execute
   // Day21().execute
