@@ -7,7 +7,7 @@ case class Day12()
 {
   def getInput(): String = Source.fromResource("day12.data").mkString
 
-  def hasRed(obj: Map[String, Any]): Boolean =
+  def hasRed(obj: Map[_, _]): Boolean =
     obj.values exists { 
       case v: String => v == "red" 
       case _ => false
@@ -19,7 +19,7 @@ case class Day12()
         => value
       case value: Double 
         => value.toInt
-      case value: Map[String, Any]
+      case value: Map[_, _]
         => value.values.map(v => part1(v)).sum
       case value: List[Any]
         => value.map(v => part1(v)).sum
@@ -33,7 +33,7 @@ case class Day12()
         => value
       case value: Double 
         => value.toInt
-      case value: Map[String, Any]
+      case value: Map[_, _]
         =>  if (hasRed(value)) 0 else value.values.map(v => part2(v)).sum
       case value: List[Any] 
         => value.map(v => part2(v)).sum
