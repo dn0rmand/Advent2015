@@ -26,10 +26,10 @@ object Main extends App {
   Day19().execute
   Day20().execute
   Day21().execute
-  // Day22().execute
-  // Day23().execute
-  // Day24().execute
-  // Day25().execute
+  Day22().execute
+  Day23().execute
+  Day24().execute
+  Day25().execute
 
   println()
   println("Done")
