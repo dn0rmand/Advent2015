@@ -14,9 +14,9 @@ object Main extends App {
     result
   }
 
-  println("###############################")
-  println("# Avent of Code 2015 in Scala #")
-  println("###############################")
+  println("################################")
+  println("# Advent of Code 2015 in Scala #")
+  println("################################")
   
   time {
     Day1().execute
