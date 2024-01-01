@@ -4,3 +4,4 @@
 /project/
 /.ammonite/
 metals.sbt
+*.DS_Store
